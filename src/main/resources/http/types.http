@@ -1,0 +1,32 @@
+### Create
+POST localhost:8080/types/create
+Content-Type: application/json
+
+{
+  "orderNumber": 4,
+  "nameUz": "types 4 uz",
+  "nameEn": "types 4 en",
+  "nameRu": "types 4 ru"
+}
+
+### UPdate
+PUT localhost:8080/types/update/{{id}}
+Content-Type: application/json
+
+{
+  "orderNumber": 4,
+  "nameUz": "types 4 uz",
+  "nameEn": "types 4 en",
+  "nameRu": "types 4 ru"
+}
+
+### DElete
+DELETE localhost:8080/region/delete/{{id}}
+
+### PAgination
+GET localhost:8080/types/pagination?page=1&size=1
+
+### Get By Lang
+GET localhost:8080/types/lang
+Accept-Language: UZ
+
