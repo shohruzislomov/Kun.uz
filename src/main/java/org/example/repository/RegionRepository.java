@@ -19,5 +19,4 @@ public interface RegionRepository extends CrudRepository<RegionEntity,Integer> {
             "  END as name " +
             "from regions order by order_number desc ; ", nativeQuery = true)
     List<RegionMapper> findAll(@Param("lang") String lang);
-
 }

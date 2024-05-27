@@ -1,0 +1,13 @@
+### Registration
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "name": "Shohrux",
+  "surname": "Saydullayev",
+  "email": "shohruxjan8892@gmail.com",
+  "password": "12345"
+}
+### resend in registration
+GET localhost:8080/auth/registration/resend/shohruxjan8892@gmail.com
+
